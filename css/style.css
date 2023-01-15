@@ -17,12 +17,15 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 30px;
+  max-width: 2200px;
+  margin: auto;
 }
 
 .header {
   height: 95vh;
   background: #769fcd9d;
   position: relative;
+  
 }
 
 .inner-header {
