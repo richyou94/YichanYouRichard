@@ -23,82 +23,74 @@ body {
   height: 95vh;
   background: rgba(118, 159, 205, 0.8);
   position: relative; }
-
-.header__inner {
-  height: 100%;
-  background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.8), rgba(118, 159, 205, 0.8)), url("../assets/profile.png");
-  background-size: cover;
-  background-position: 30% 70%;
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 13rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center; }
+  .header__inner {
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.8), rgba(118, 159, 205, 0.8)), url("../assets/profile.png");
+    background-size: cover;
+    background-position: 30% 70%;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 13rem; }
+  .header__text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
+  .header__slash {
+    height: 40%;
+    width: 30%;
+    background-image: linear-gradient(to left bottom, #f7fbfc, rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(85% 0%, 100% 0%, 15% 100%, 0% 100%);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in; }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
-  animation-name: fadeToDown;
-  animation-duration: 1s;
-  animation-timing-function: ease-in; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
-  margin: 5rem 0rem;
-  animation-name: fadeToRight;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in;
-  animation-delay: 0.5s;
-  visibility: hidden;
-  animation-fill-mode: forwards; }
-
-.heading-primary--sub2 {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
-  margin: 5rem 0rem;
-  animation-name: fadeToLeft;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in;
-  animation-delay: 0.5s;
-  visibility: hidden;
-  animation-fill-mode: forwards; }
-
-.header__slash {
-  height: 40%;
-  width: 30%;
-  background-image: linear-gradient(to left bottom, #f7fbfc, rgba(255, 255, 255, 0.8));
-  background-size: cover;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  clip-path: polygon(85% 0%, 100% 0%, 15% 100%, 0% 100%);
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-timing-function: ease-in; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    animation-name: fadeToDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    margin: 5rem 0rem;
+    animation-name: fadeToRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards; }
+  .heading-primary--sub2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    margin: 5rem 0rem;
+    animation-name: fadeToLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards; }
 
 @keyframes fadeToDown {
   0% {
@@ -154,8 +146,7 @@ body {
   100% {
     opacity: 1; } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -190,6 +181,9 @@ body {
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-0.1rem);
@@ -198,6 +192,8 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn::after {
   content: "";
@@ -210,10 +206,3 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
-
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
