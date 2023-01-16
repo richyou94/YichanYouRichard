@@ -48,3 +48,29 @@ body {
     animation-fill-mode: forwards;
   }
 }
+
+.heading-secondary {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewX(180deg);
+    background-image: linear-gradient(
+      to left,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    text-shadow: 0.5rem 1rem 2rem rgba($color: $color-black, $alpha: 0.2);
+  }
+}
