@@ -153,6 +153,33 @@ body {
     visibility: visible;
   }
 }
+@keyframes fadeToRightBtn {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, -50%);
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+}
+
+@keyframes fadeToLeftBtn {
+  0% {
+    opacity: 0;
+    transform: translate(30px, -50%);
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+}
 
 @keyframes fadeIn {
   0% {
@@ -171,7 +198,30 @@ body {
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
-  position: relative;
+}
+.btn-web {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  animation-name: fadeToRightBtn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+.btn-music {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  animation-name: fadeToLeftBtn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
 }
 
 .btn:hover {
@@ -202,10 +252,9 @@ body {
 }
 
 .btn-white::after {
-    background-color: #fff;
+  background-color: #fff;
 }
 .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
-
