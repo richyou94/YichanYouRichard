@@ -1,0 +1,25 @@
+{
+  "name": "yichanyourichard",
+  "version": "1.0.0",
+  "description": "Landing page for Richard You's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YichanYouRichard/YichanYouRichard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YichanYouRichard/YichanYouRichard/issues"
+  },
+  "homepage": "https://github.com/YichanYouRichard/YichanYouRichard#readme",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
