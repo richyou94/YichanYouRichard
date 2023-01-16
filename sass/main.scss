@@ -1,7 +1,9 @@
 $color-primary: #90bdd9;
 $color-primary-light: #b9d7ea;
 $color-primary-dark: #769fcd;
+
 $color-grey-dark: #777;
+$color-white: #fff;
 
 *,
 *::after,
@@ -66,7 +68,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
 }
 .heading-primary-main {
@@ -245,7 +247,7 @@ body {
 }
 
 .btn-white {
-  background-color: #fff;
+  background-color: $color-white;
   color: $color-grey-dark;
 }
 .btn::after {
@@ -262,7 +264,7 @@ body {
 }
 
 .btn-white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
