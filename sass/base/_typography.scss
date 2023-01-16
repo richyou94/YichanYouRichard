@@ -71,6 +71,11 @@ body {
       $color-primary-light,
       $color-primary-dark
     );
-    text-shadow: 0.5rem 1rem 2rem rgba($color: $color-black, $alpha: 0.2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color: $color-black, $alpha: 0.1);
+    
+    &::after {
+      content: "😄";
+      color: white;
+    }
   }
 }
