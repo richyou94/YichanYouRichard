@@ -4,21 +4,28 @@ Medium color: #90bdd9
 Light Color: #B9D7EA
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
-  max-width: 2200px;
+  padding: 3rem;
+  max-width: 220rem;
   margin: auto;
+
+  box-sizing: border-box;
 }
 
 .header {
@@ -38,12 +45,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 130px;
+  height: 13rem;
 }
 
 .text-box {
@@ -61,9 +68,9 @@ body {
 }
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 20px;
+  letter-spacing: 2rem;
 
   animation-name: fadeToDown;
   animation-duration: 1s;
@@ -71,10 +78,10 @@ body {
 }
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 10px;
-  margin: 50px 0px;
+  letter-spacing: 1rem;
+  margin: 5rem 0rem;
   animation-name: fadeToRight;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
@@ -84,10 +91,10 @@ body {
 }
 .heading-primary-sub2 {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 10px;
-  margin: 50px 0px;
+  letter-spacing: 1rem;
+  margin: 5rem 0rem;
   animation-name: fadeToLeft;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
@@ -117,7 +124,7 @@ body {
 @keyframes fadeToDown {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-10rem);
   }
 
   100% {
@@ -129,7 +136,7 @@ body {
 @keyframes fadeToRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
     visibility: hidden;
   }
 
@@ -143,7 +150,7 @@ body {
 @keyframes fadeToLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
     visibility: hidden;
   }
 
@@ -156,7 +163,7 @@ body {
 @keyframes fadeToRightBtn {
   0% {
     opacity: 0;
-    transform: translate(-200px, -50%);
+    transform: translate(-20rem, -50%);
     visibility: hidden;
   }
 
@@ -170,7 +177,7 @@ body {
 @keyframes fadeToLeftBtn {
   0% {
     opacity: 0;
-    transform: translate(30px, -50%);
+    transform: translate(3rem, -50%);
     visibility: hidden;
   }
 
@@ -194,9 +201,9 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
 }
 .btn-web {
@@ -225,13 +232,13 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -243,7 +250,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
