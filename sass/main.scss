@@ -1,9 +1,11 @@
 $color-primary: #90bdd9;
 $color-primary-light: #b9d7ea;
 $color-primary-dark: #769fcd;
+$color-light-background: #f7fbfc;
 
 $color-grey-dark: #777;
 $color-white: #fff;
+$color-black: #000;
 
 *,
 *::after,
@@ -31,7 +33,7 @@ body {
 
 .header {
   height: 95vh;
-  background: #769fcd9d;
+  background: rgba($color-primary-dark, 0.8);
   position: relative;
 }
 
@@ -112,8 +114,8 @@ body {
   width: 30%;
   background-image: linear-gradient(
     to left bottom,
-    #f7fbfcbf,
-    rgba(255, 255, 255, 0.739)
+    $color-light-background,
+    rgba($color-white, 0.8)
   );
   background-size: cover;
   position: absolute;
@@ -238,12 +240,12 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
 .btn-white {
