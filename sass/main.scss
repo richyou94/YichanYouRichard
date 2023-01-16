@@ -1,11 +1,7 @@
-/* 
-Dark color: #769FCD
-Medium color: #90bdd9
-Light Color: #B9D7EA
-*/
 $color-primary: #90bdd9;
 $color-primary-light: #b9d7ea;
 $color-primary-dark: #769fcd;
+$color-grey-dark: #777;
 
 *,
 *::after,
@@ -23,7 +19,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   max-width: 220rem;
   margin: auto;
@@ -250,7 +246,7 @@ body {
 
 .btn-white {
   background-color: #fff;
-  color: #777;
+  color: $color-grey-dark;
 }
 .btn::after {
   content: "";
