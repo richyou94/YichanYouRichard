@@ -1,12 +1,22 @@
+/* 
+Dark color: #769FCD
+Medium color: #90bdd9
+Light Color: #B9D7EA
+*/
+$color-primary: #90bdd9;
+$color-primary-light: #b9d7ea;
+$color-primary-dark: #769fcd;
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -17,27 +27,38 @@ body {
   padding: 3rem;
   max-width: 220rem;
   margin: auto;
-  box-sizing: border-box; }
+
+  box-sizing: border-box;
+}
 
 .header {
   height: 95vh;
   background: #769fcd9d;
-  position: relative; }
+  position: relative;
+}
 
 .inner-header {
   height: 100%;
-  background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.8), rgba(118, 159, 205, 0.8)), url("../assets/profile.png");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../assets/profile.png");
   background-size: cover;
   background-position: 30% 70%;
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
 
 .logo-box {
   position: absolute;
   top: 4rem;
-  left: 4rem; }
+  left: 4rem;
+}
 
 .logo {
-  height: 13rem; }
+  height: 13rem;
+}
 
 .text-box {
   position: absolute;
@@ -45,21 +66,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  text-align: center; }
+  text-align: center;
+}
 
 .heading-primary {
   color: #fff;
-  text-transform: uppercase; }
-
+  text-transform: uppercase;
+}
 .heading-primary-main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 2rem;
+
   animation-name: fadeToDown;
   animation-duration: 1s;
-  animation-timing-function: ease-in; }
-
+  animation-timing-function: ease-in;
+}
 .heading-primary-sub {
   display: block;
   font-size: 2rem;
@@ -71,8 +94,8 @@ body {
   animation-timing-function: ease-in;
   animation-delay: 0.5s;
   visibility: hidden;
-  animation-fill-mode: forwards; }
-
+  animation-fill-mode: forwards;
+}
 .heading-primary-sub2 {
   display: block;
   font-size: 2rem;
@@ -84,12 +107,16 @@ body {
   animation-timing-function: ease-in;
   animation-delay: 0.5s;
   visibility: hidden;
-  animation-fill-mode: forwards; }
-
+  animation-fill-mode: forwards;
+}
 .slash {
   height: 40%;
   width: 30%;
-  background-image: linear-gradient(to left bottom, #f7fbfcbf, rgba(255, 255, 255, 0.739));
+  background-image: linear-gradient(
+    to left bottom,
+    #f7fbfcbf,
+    rgba(255, 255, 255, 0.739)
+  );
   background-size: cover;
   position: absolute;
   top: 70%;
@@ -98,61 +125,84 @@ body {
   clip-path: polygon(85% 0%, 100% 0%, 15% 100%, 0% 100%);
   animation-name: fadeIn;
   animation-duration: 2s;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+}
 
 @keyframes fadeToDown {
   0% {
     opacity: 0;
-    transform: translateY(-10rem); }
+    transform: translateY(-10rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes fadeToRight {
   0% {
     opacity: 0;
     transform: translateX(-10rem);
-    visibility: hidden; }
+    visibility: hidden;
+  }
+
   100% {
     opacity: 1;
     transform: translateX(0);
-    visibility: visible; } }
+    visibility: visible;
+  }
+}
 
 @keyframes fadeToLeft {
   0% {
     opacity: 0;
     transform: translateX(10rem);
-    visibility: hidden; }
+    visibility: hidden;
+  }
+
   100% {
     opacity: 1;
     transform: translateX(0);
-    visibility: visible; } }
-
+    visibility: visible;
+  }
+}
 @keyframes fadeToRightBtn {
   0% {
     opacity: 0;
     transform: translate(-20rem, -50%);
-    visibility: hidden; }
+    visibility: hidden;
+  }
+
   100% {
     opacity: 1;
     transform: translate(-50%, -50%);
-    visibility: visible; } }
+    visibility: visible;
+  }
+}
 
 @keyframes fadeToLeftBtn {
   0% {
     opacity: 0;
     transform: translate(3rem, -50%);
-    visibility: hidden; }
+    visibility: hidden;
+  }
+
   100% {
     opacity: 1;
     transform: translate(-50%, -50%);
-    visibility: visible; } }
+    visibility: visible;
+  }
+}
 
 @keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 .btn:link,
 .btn:visited {
@@ -161,8 +211,8 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all 0.2s; }
-
+  transition: all 0.2s;
+}
 .btn-web {
   position: absolute;
   top: 70%;
@@ -173,8 +223,8 @@ body {
   animation-timing-function: ease-in;
   animation-delay: 0.5s;
   visibility: hidden;
-  animation-fill-mode: forwards; }
-
+  animation-fill-mode: forwards;
+}
 .btn-music {
   position: absolute;
   top: 70%;
@@ -185,20 +235,23 @@ body {
   animation-timing-function: ease-in;
   animation-delay: 0.5s;
   visibility: hidden;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
 
 .btn-white {
   background-color: #fff;
-  color: #777; }
-
+  color: #777;
+}
 .btn::after {
   content: "";
   display: inline-block;
@@ -209,11 +262,13 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+}
 
 .btn-white::after {
-  background-color: #fff; }
-
+  background-color: #fff;
+}
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
+  opacity: 0;
+}
