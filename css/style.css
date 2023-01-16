@@ -208,3 +208,8 @@ body {
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease-in; }
+
+.section-about {
+  background-color: #f7fbfc;
+  padding: 25rem 0;
+  margin-top: -20vh; }
