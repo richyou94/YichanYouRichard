@@ -37,7 +37,7 @@ body {
   position: relative;
 }
 
-.inner-header {
+.header__inner {
   height: 100%;
   background-image: linear-gradient(
       to right bottom,
@@ -50,17 +50,17 @@ body {
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 13rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -73,7 +73,7 @@ body {
   color: $color-white;
   text-transform: uppercase;
 }
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -83,7 +83,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in;
 }
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -96,7 +96,7 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards;
 }
-.heading-primary-sub2 {
+.heading-primary--sub2 {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -109,7 +109,7 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards;
 }
-.slash {
+.header__slash {
   height: 40%;
   width: 30%;
   background-image: linear-gradient(
@@ -213,7 +213,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
 }
-.btn-web {
+.btn--web {
   position: absolute;
   top: 70%;
   left: 25%;
@@ -225,7 +225,7 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards;
 }
-.btn-music {
+.btn--music {
   position: absolute;
   top: 70%;
   left: 75%;
@@ -248,7 +248,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: $color-white;
   color: $color-grey-dark;
 }
@@ -265,10 +265,11 @@ body {
   transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: $color-white;
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
+

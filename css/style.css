@@ -24,22 +24,22 @@ body {
   background: rgba(118, 159, 205, 0.8);
   position: relative; }
 
-.inner-header {
+.header__inner {
   height: 100%;
   background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.8), rgba(118, 159, 205, 0.8)), url("../assets/profile.png");
   background-size: cover;
   background-position: 30% 70%;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem; }
 
-.logo {
+.header__logo {
   height: 13rem; }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -51,7 +51,7 @@ body {
   color: #fff;
   text-transform: uppercase; }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -60,7 +60,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-in; }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -73,7 +73,7 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards; }
 
-.heading-primary-sub2 {
+.heading-primary--sub2 {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -86,7 +86,7 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards; }
 
-.slash {
+.header__slash {
   height: 40%;
   width: 30%;
   background-image: linear-gradient(to left bottom, #f7fbfc, rgba(255, 255, 255, 0.8));
@@ -163,7 +163,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s; }
 
-.btn-web {
+.btn--web {
   position: absolute;
   top: 70%;
   left: 25%;
@@ -175,7 +175,7 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards; }
 
-.btn-music {
+.btn--music {
   position: absolute;
   top: 70%;
   left: 75%;
@@ -195,7 +195,7 @@ body {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777; }
 
@@ -211,7 +211,7 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff; }
 
 .btn:hover::after {
