@@ -240,18 +240,27 @@ body {
 
 .composition {
   position: relative;
-  padding: 1px;
-  text-align: center; }
+  padding: 1px; }
   .composition__photo {
     width: 55%;
     position: absolute;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     z-index: 10;
-    transform: translate(-50%, -50%); }
+    transition: all .2s;
+    transform: translateX(-50%); }
     .composition__photo--p1 {
-      left: 0;
-      top: 50%; }
+      left: 40%; }
+    .composition__photo--p2 {
+      left: 50%;
+      width: 62%;
+      z-index: 11; }
+    .composition__photo--p3 {
+      left: 60%; }
+    .composition__photo:hover {
+      transform: scale(1.2) translate(-50%, -1rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 12; }
 
 .row {
   max-width: 114rem;
