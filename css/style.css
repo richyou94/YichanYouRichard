@@ -238,6 +238,21 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.composition {
+  position: relative;
+  padding: 1px;
+  text-align: center; }
+  .composition__photo {
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    z-index: 10;
+    transform: translate(-50%, -50%); }
+    .composition__photo--p1 {
+      left: 0;
+      top: 50%; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

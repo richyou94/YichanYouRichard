@@ -1,7 +1,21 @@
 .composition {
     position: relative;
+    padding: 1px;
+    text-align: center;
 
     &__photo {
         width: 55%;
+        position: absolute;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+
+        &--p1 {
+            left: 0;
+            top: 50%;
+        }
     }
+
+    
 }
