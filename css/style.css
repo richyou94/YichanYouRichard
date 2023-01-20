@@ -259,6 +259,18 @@ body {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 2.5rem 6rem rgba(0, 0, 0, 0.2); }
 
+.card {
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    font-size: 2rem;
+    height: 52rem;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: orangered; }
+
 .composition {
   position: relative;
   padding: 1px; }
