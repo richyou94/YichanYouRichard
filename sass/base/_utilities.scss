@@ -1,3 +1,5 @@
+// Text align utilities
+
 .u-text-left {
     text-align: left;
 }
@@ -5,6 +7,8 @@
 .u-text-center {
     text-align: center;
 }
+
+// Margin Bottom
 
 .u-margin-bottom-small {
     margin-bottom: 1.5rem;
@@ -17,6 +21,12 @@
 .u-margin-bottom-big {
     margin-bottom: 8rem;
 }
+
+.u-margin-bottom-huge {
+    margin-bottom: 12rem;
+}
+
+// Margin Top
 
 .u-margin-top-2 {
     margin-top: 2rem;

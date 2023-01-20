@@ -155,6 +155,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 12rem; }
+
 .u-margin-top-2 {
   margin-top: 2rem; }
 
@@ -349,8 +352,8 @@ body {
   min-height: 70vh; }
 
 .section-overview {
-  height: 50vh;
-  padding: 20rem 0;
+  height: 60vh;
+  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(247, 251, 252, 0.5), rgba(219, 236, 240, 0.5)), url("../assets/background-Gyungju.png");
   background-size: cover;
   background-position: center; }
