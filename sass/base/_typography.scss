@@ -82,6 +82,13 @@ body {
   }
 }
 
+.head-2nd-back-dark {
+  background-color: $color-black;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
