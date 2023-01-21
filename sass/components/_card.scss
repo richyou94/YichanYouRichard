@@ -27,15 +27,25 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
+          $color-green-light,
+          $color-green-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
           $color-primary-light,
           $color-primary-dark
         );
       }
 
-      &-2 {
-      }
-
       &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-purple-light,
+          $color-purple-dark
+        );
       }
     }
   }
@@ -61,16 +71,15 @@
   }
 
   &__deployed {
-display: inline-block;
-position: absolute;
-bottom: 0;
-right: 0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
     &--link {
       position: relative;
       display: inline-block;
       height: 4rem;
-      
     }
   }
 
@@ -85,16 +94,28 @@ right: 0;
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          rgba($color-primary-light, 0.45),
-          rgba($color-primary-dark, 0.45)
+          rgba($color-green-light, 0.45),
+          rgba($color-green-dark, 0.45)
         ),
         url(../assets/Gitbook_logo.png);
     }
 
     &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.45),
+          rgba($color-primary-dark, 0.45)
+        ),
+        url(../assets/G.O.A.T.png);
     }
 
     &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-purple-light, 0.45),
+          rgba($color-purple-dark, 0.45)
+        ),
+        url(../assets/micro-managers.png);
     }
   }
 
@@ -117,23 +138,33 @@ right: 0;
     &--1 {
       background-image: linear-gradient(
         to right bottom,
+        rgba($color-green-light, 0.85),
+        rgba($color-green-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
         rgba($color-primary-light, 0.85),
         rgba($color-primary-dark, 0.85)
       );
     }
 
-    &--2 {
-    }
-
     &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-purple-light, 0.85),
+        rgba($color-purple-dark, 0.85)
+      );
     }
   }
   &__details {
-    padding: 3rem;
+    padding: 1rem;
 
     ul {
       list-style: none;
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
 
       li {
@@ -149,5 +180,25 @@ right: 0;
   }
 
   &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__github {
+    text-align: center;
+    color: $color-white;
+
+    &--heading {
+      font-size: 5rem;
+    }
+    &--link {
+    }
+    &--logo {
+      width: 20rem;
+    }
   }
 }

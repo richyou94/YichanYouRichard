@@ -167,7 +167,8 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  transform: scale(1); }
 
 .btn--web {
   position: absolute;
@@ -281,7 +282,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #DDFFBC, #91C788); }
+      .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #b9d7ea, #769fcd); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #D2DAFF, #B1B2FF); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -311,7 +316,11 @@ body {
     background-position: center;
     background-repeat: no-repeat; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.45), rgba(118, 159, 205, 0.45)), url(../assets/Gitbook_logo.png); }
+      background-image: linear-gradient(to right bottom, rgba(221, 255, 188, 0.45), rgba(145, 199, 136, 0.45)), url(../assets/Gitbook_logo.png); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.45), rgba(118, 159, 205, 0.45)), url(../assets/G.O.A.T.png); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, rgba(210, 218, 255, 0.45), rgba(177, 178, 255, 0.45)), url(../assets/micro-managers.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -326,12 +335,16 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(221, 255, 188, 0.85), rgba(145, 199, 136, 0.85)); }
+    .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(185, 215, 234, 0.85), rgba(118, 159, 205, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(210, 218, 255, 0.85), rgba(177, 178, 255, 0.85)); }
   .card__details {
-    padding: 3rem; }
+    padding: 1rem; }
     .card__details ul {
       list-style: none;
-      width: 80%;
+      width: 90%;
       margin: 0 auto; }
       .card__details ul li {
         text-align: center;
@@ -339,6 +352,20 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__github {
+    text-align: center;
+    color: #fff; }
+    .card__github--heading {
+      font-size: 5rem; }
+    .card__github--logo {
+      width: 20rem; }
 
 .composition {
   position: relative;
