@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes fadeToDown {
   0% {
     opacity: 0;
@@ -126,9 +125,8 @@ body {
     transform: skewX(180deg);
     background-image: linear-gradient(to left, #b9d7ea, #769fcd);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.1); }
-    .heading-secondary:hover::after {
-      content: "😄";
-      color: white; }
+  .heading-secondary--about:hover::after {
+    content: "  & MY FAMILY"; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -160,6 +158,20 @@ body {
 
 .u-margin-top-2 {
   margin-top: 2rem; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -379,17 +391,21 @@ body {
     transition: all .2s;
     transform: translateX(-50%); }
     .composition__photo--p1 {
-      left: 40%; }
+      left: 40%;
+      width: 61%; }
     .composition__photo--p2 {
       left: 50%;
       width: 62%;
       z-index: 11; }
     .composition__photo--p3 {
       left: 60%; }
+    .composition__photo--p4 {
+      left: 50%;
+      z-index: 12; }
     .composition__photo:hover {
       transform: scale(1.2) translate(-50%, -1rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 12; }
+      z-index: 13; }
 
 .row {
   max-width: 114rem;
@@ -470,3 +486,7 @@ body {
   min-height: 60vh;
   padding: 10rem 0;
   background-color: #f7fbfc; }
+
+.section-musician {
+  min-height: 80vh;
+  position: relative; }

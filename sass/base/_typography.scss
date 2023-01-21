@@ -73,9 +73,11 @@ body {
     );
     text-shadow: 0.5rem 1rem 2rem rgba($color: $color-black, $alpha: 0.1);
     
-    &::after {
-      content: "😄";
-      color: white;
+  }
+
+  &--about {
+    &:hover::after {
+      content: "  & MY FAMILY"
     }
   }
 }

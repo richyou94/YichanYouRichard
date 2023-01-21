@@ -14,6 +14,7 @@
 
         &--p1 {
             left: 40%;
+            width: 61%;
         }
 
         &--p2 {
@@ -25,10 +26,16 @@
         &--p3 {
             left: 60%;
         }
+
+        &--p4 {
+            left: 50%;            
+            z-index: 12;
+        }
+
         &:hover {
             transform: scale(1.2) translate(-50%, -1rem);
             box-shadow: $shadow-dark;
-            z-index: 12;
+            z-index: 13;
         }
 
     }
