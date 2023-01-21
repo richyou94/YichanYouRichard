@@ -265,6 +265,9 @@ body {
   position: relative;
   height: 52rem; }
   .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 2rem;
     height: 52rem;
     width: 100%;
@@ -278,11 +281,28 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-color: greenyellow; }
+        background-image: linear-gradient(to right bottom, #b9d7ea, #769fcd); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__skill-box {
+    display: inline-block;
+    position: absolute;
+    top: 0; }
+    .card__skill-box--image {
+      position: relative;
+      display: inline-block;
+      height: 4rem; }
+  .card__deployed {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .card__deployed--link {
+      position: relative;
+      display: inline-block;
+      height: 4rem; }
   .card__picture {
     background-size: contain;
     height: 23rem;
@@ -297,7 +317,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 12rem;
     right: 2rem;
@@ -318,7 +338,7 @@ body {
         font-size: 1.5rem;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #f7f7f7; }
+          border-bottom: 1px solid #eee; }
 
 .composition {
   position: relative;

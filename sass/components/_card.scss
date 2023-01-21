@@ -5,6 +5,9 @@
   height: 52rem;
 
   &__side {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 2rem;
     height: 52rem;
     width: 100%;
@@ -22,7 +25,11 @@
       transform: rotateY(180deg);
 
       &-1 {
-        background-color: greenyellow;
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
       }
 
       &-2 {
@@ -41,13 +48,39 @@
     transform: rotateY(0);
   }
 
+  &__skill-box {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+
+    &--image {
+      position: relative;
+      display: inline-block;
+      height: 4rem;
+    }
+  }
+
+  &__deployed {
+display: inline-block;
+position: absolute;
+bottom: 0;
+right: 0;
+
+    &--link {
+      position: relative;
+      display: inline-block;
+      height: 4rem;
+      
+    }
+  }
+
   &__picture {
     background-size: contain;
     height: 23rem;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-position: center;
-    background-repeat: no-repeat;;
+    background-repeat: no-repeat;
 
     &--1 {
       background-image: linear-gradient(
@@ -70,7 +103,7 @@
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color: $color-black;
+    color: $color-white;
     position: absolute;
     top: 12rem;
     right: 2rem;
