@@ -162,8 +162,11 @@ body {
 .u-margin-bottom-huge {
   margin-bottom: 12rem; }
 
-.u-margin-top-2 {
+.u-margin-top-small {
   margin-top: 2rem; }
+
+.u-margin-top-huge {
+  margin-top: 12rem; }
 
 .bg-video {
   position: absolute;
@@ -510,5 +513,5 @@ body {
 
 .section-musician {
   min-height: 75vh;
-  padding: 10rem 0;
+  padding: 15rem 0;
   position: relative; }
