@@ -58,6 +58,15 @@
     }
   }
 
+  &--blue {
+    background-color: $color-primary;
+    color: $color-grey-dark-1;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
