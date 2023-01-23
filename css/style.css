@@ -215,6 +215,12 @@ body {
   visibility: hidden;
   animation-fill-mode: forwards; }
 
+.btn--set-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%) !important; }
+
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -277,7 +283,8 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  position: relative; }
   .overview-box__icon {
     font-size: 6rem;
     margin-bottom: 4rem;
