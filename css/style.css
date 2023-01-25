@@ -644,6 +644,9 @@ body {
   background-color: #f7fbfc;
   padding: 10rem 0;
   min-height: 70vh; }
+  @media screen and (max-width: 37.5em) {
+    .section-about {
+      padding: 5rem 0; } }
 
 .section-overview {
   min-height: 60vh;
@@ -656,8 +659,14 @@ body {
   min-height: 60vh;
   padding: 10rem 0;
   background-color: #f7fbfc; }
+  @media screen and (max-width: 37.5em) {
+    .section-projects {
+      padding: 5rem 0; } }
 
 .section-musician {
   min-height: 75vh;
   padding: 15rem 0;
   position: relative; }
+  @media screen and (max-width: 37.5em) {
+    .section-musician {
+      padding: 5rem 0; } }
