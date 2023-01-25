@@ -8,6 +8,9 @@
     border-radius: 10rem;
     transition: all 0.2s;
     transform: scale(1);
+    @include respond(phone) {
+      padding: 1.5rem 3rem;
+    }
   }
   &--web {
     position: absolute;
@@ -20,6 +23,11 @@
     animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
+
+    @include respond(phone) {
+      top: 50%;
+      left: 50%;
+    }
   }
   &--music {
     position: absolute;
@@ -32,13 +40,17 @@
     animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
+    @include respond(phone) {
+      top: 60%;
+      left: 50%;
+    }
   }
-&--set-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: scale(1) translate(-50%, -50%) !important;
-}
+  &--set-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%) !important;
+  }
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: $shadow-light;

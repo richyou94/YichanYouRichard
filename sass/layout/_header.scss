@@ -20,10 +20,23 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
+
+    @include respond(phone) {
+      top: 1rem;
+      left: 1rem;
+    }
   }
 
   &__logo {
     height: 13rem;
+
+    @include respond(tab-port) {
+      height: 10rem;
+    }
+
+    @include respond(phone) {
+      height: 6rem;
+    }
   }
 
   &__text-box {
@@ -31,12 +44,16 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 90%;
     text-align: center;
+
+    @include respond(phone) {
+      top: 25%;
+    }
   }
 
   &__slash {
-    height: 40%;
+    height: 30%;
     width: 30%;
     background-image: linear-gradient(
       to left bottom,
@@ -52,5 +69,9 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease-in;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }

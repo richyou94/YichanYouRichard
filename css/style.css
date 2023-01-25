@@ -61,19 +61,37 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  max-width: 220rem;
-  margin: auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -86,6 +104,13 @@ body {
     animation-name: fadeToDown;
     animation-duration: 1s;
     animation-timing-function: ease-in; }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 5rem; } }
+    @media screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 0.5rem;
+        font-size: 3rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -98,6 +123,9 @@ body {
     animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards; }
+    @media screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.5rem; } }
   .heading-primary--sub2 {
     display: block;
     font-size: 2rem;
@@ -110,6 +138,9 @@ body {
     animation-delay: 0.5s;
     visibility: hidden;
     animation-fill-mode: forwards; }
+    @media screen and (max-width: 37.5em) {
+      .heading-primary--sub2 {
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   font-size: 5rem;
@@ -121,6 +152,12 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewX(180deg);
     background-image: linear-gradient(to left, #b9d7ea, #769fcd);
@@ -131,8 +168,11 @@ body {
 .head-2nd-back-dark {
   background-color: #000;
   text-align: center;
-  width: 30%;
+  width: 45%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .head-2nd-back-dark {
+      width: 100%; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -190,6 +230,9 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   transform: scale(1); }
+  @media screen and (max-width: 37.5em) {
+    .btn:link, .btn:visited {
+      padding: 1.5rem 3rem; } }
 
 .btn--web {
   position: absolute;
@@ -202,6 +245,10 @@ body {
   animation-delay: 0.5s;
   visibility: hidden;
   animation-fill-mode: forwards; }
+  @media screen and (max-width: 37.5em) {
+    .btn--web {
+      top: 50%;
+      left: 50%; } }
 
 .btn--music {
   position: absolute;
@@ -214,6 +261,10 @@ body {
   animation-delay: 0.5s;
   visibility: hidden;
   animation-fill-mode: forwards; }
+  @media screen and (max-width: 37.5em) {
+    .btn--music {
+      top: 60%;
+      left: 50%; } }
 
 .btn--set-bottom {
   position: absolute;
@@ -459,12 +510,24 @@ body {
     border-top: 1px solid #333;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        padding: 1rem 2rem;
+        display: block;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+      @media (max-width: 56.25em) {
+        .footer__item:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 1.5rem; } }
+    @media (max-width: 56.25em) {
+      .footer__item {
+        display: block; } }
   .footer__link:link, .footer__link:visited {
     color: #333;
     text-decoration: none;
@@ -473,17 +536,29 @@ body {
   .footer__link:hover, .footer__link:active {
     color: #769fcd;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  .footer__link__copyright {
+  .footer__copyright {
     border-top: 1px solid #333;
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        padding: 1rem 2rem;
+        display: block;
+        width: 100%;
+        text-align: center; } }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
@@ -492,6 +567,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -519,17 +601,30 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem; }
+    @media screen and (max-width: 37.5em) {
+      .header__logo-box {
+        top: 1rem;
+        left: 1rem; } }
   .header__logo {
     height: 13rem; }
+    @media (max-width: 56.25em) {
+      .header__logo {
+        height: 10rem; } }
+    @media screen and (max-width: 37.5em) {
+      .header__logo {
+        height: 6rem; } }
   .header__text-box {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 90%;
     text-align: center; }
+    @media screen and (max-width: 37.5em) {
+      .header__text-box {
+        top: 25%; } }
   .header__slash {
-    height: 40%;
+    height: 30%;
     width: 30%;
     background-image: linear-gradient(to left bottom, #f7fbfc, rgba(255, 255, 255, 0.8));
     background-size: cover;
@@ -541,6 +636,9 @@ body {
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease-in; }
+    @media screen and (max-width: 37.5em) {
+      .header__slash {
+        display: none; } }
 
 .section-about {
   background-color: #f7fbfc;
