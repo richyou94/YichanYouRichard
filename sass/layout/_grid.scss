@@ -4,13 +4,13 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
-
-    @include respond(tab-port) {
-      margin-bottom: $gutter-vertical-small;
-    }
   }
   @include respond(tab-port) {
     max-width: 50rem;
+  }
+  @include respond(phone) {
+    max-width: none;
+    width: 100%;
   }
   @include clearfix;
 
@@ -21,8 +21,12 @@
       margin-right: $gutter-horizontal;
 
       @include respond(tab-port) {
+        float:none;
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
+      }
+      @include respond(phone) {
+        margin-bottom: 0rem;
       }
     }
 

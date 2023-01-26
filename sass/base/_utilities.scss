@@ -24,6 +24,10 @@
 
 .u-margin-bottom-huge {
     margin-bottom: 12rem;
+
+    @include respond(phone) {
+        margin-bottom: 4rem;
+    }
 }
 
 // Margin Top
@@ -33,4 +37,22 @@
 }
 .u-margin-top-huge {
     margin-top: 12rem;
+}
+
+
+// Padding-around
+
+.u-padding-around-small {
+    padding: 3rem;
+}
+
+// responsive phone
+
+.responsive-margin-top {
+    @include respond(phone) {
+        margin-top: 15rem;
+    }
+    @media screen and (max-width: 480px) {
+        margin-top: 3rem;
+    }
 }
