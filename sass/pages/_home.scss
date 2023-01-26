@@ -30,7 +30,7 @@
   padding: 10rem 0;
   background-color: $color-light-background;
   @include respond(phone) {
-    padding: 5rem 0;
+    padding: 5rem 0rem 0rem;
   }
 }
 

@@ -25,8 +25,10 @@
     animation-fill-mode: forwards;
 
     @include respond(phone) {
-      top: 50%;
+      top: 55%;
       left: 50%;
+      width: 64%;
+      text-align: center;
     }
   }
   &--music {
@@ -41,8 +43,10 @@
     visibility: hidden;
     animation-fill-mode: forwards;
     @include respond(phone) {
-      top: 60%;
+      top: 70%;
       left: 50%;
+      width: 64%;
+      text-align: center;
     }
   }
   &--set-bottom {
@@ -50,6 +54,7 @@
     bottom: 0;
     left: 50%;
     transform: scale(1) translate(-50%, -50%) !important;
+    
   }
   &:hover {
     transform: translateY(-0.3rem);

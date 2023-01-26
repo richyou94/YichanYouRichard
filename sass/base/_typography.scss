@@ -26,7 +26,7 @@ body {
 
     @include respond(phone) {
       letter-spacing: 0.5rem;
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   &--sub {
@@ -118,6 +118,7 @@ body {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .paragraph {
@@ -125,5 +126,9 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
   }
 }

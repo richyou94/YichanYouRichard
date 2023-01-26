@@ -4,6 +4,10 @@
   position: relative;
   height: 52rem;
 
+  @include respond(phone) {
+    height: 61rem;
+  }
+
   &__side {
     position: absolute;
     top: 0;
@@ -16,6 +20,10 @@
     overflow: hidden;
     box-shadow: $shadow-light;
     transition: all 0.8s ease;
+
+    @include respond(phone) {
+      height: 60rem;
+    }
 
     &--front {
       background-color: $color-white;
@@ -174,6 +182,10 @@
 
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light-2;
+        }
+
+        @include respond(phone) {
+          font-size: 2rem;
         }
       }
     }
