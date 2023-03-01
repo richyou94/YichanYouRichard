@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["brace-snippets-text"],{"./node_modules/brace/snippets/text.js":function(e,t){ace.define("ace/snippets/text",["require","exports","module"],(function(e,t,n){"use strict";t.snippetText=undefined,t.scope="text"}))}}]);
+//# sourceMappingURL=brace-snippets-text.612ef1a22098c8758180.js.map

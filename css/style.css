@@ -718,3 +718,7 @@ body {
   @media screen and (max-width: 37.5em) {
     .section-musician {
       padding: 5rem 0; } }
+
+.section-resume {
+  min-height: 75vh;
+  position: relative; }
